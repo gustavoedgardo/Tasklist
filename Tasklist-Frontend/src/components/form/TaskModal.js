@@ -17,7 +17,7 @@ class TaskModal extends Component {
     let title = "Task View";
     return (
       <Fragment>
-        <Button className="float-right" onClick={this.toggle}>
+        <Button className="float-right modaltext" onClick={this.toggle}>
           View
         </Button>
         <Modal

@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.toastbox {
+  min-width: 300px;
+  max-width: 300px!important;
+  background-color: #6c757d!important;
+  display: inline-block!important;
+  margin: 0.25rem!important;
+}
+.modaltext {
+  font-size: 0.9em!important;
+}

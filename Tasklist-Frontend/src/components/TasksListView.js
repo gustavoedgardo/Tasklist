@@ -14,17 +14,15 @@ class TasksListView extends Component {
           </div>
         ) : (
           taskItems.map((item) => (
-            <Toast className="d-inline-block m-1" key={item.id}>
+            <Toast className="toastbox" key={item.id}>
               <ToastHeader>Task #{item.id}</ToastHeader>
               <ToastBody>
-                {item.title}
+                {item.title.substring(0,40)}...
                 <br />
-                {!item.completed ? (
                   <TaskModal
                     taskItem={item}
                     updateTaskIntoState={this.props.updateState}
                   />
-                ):(<br />)}
               </ToastBody>
             </Toast>
           ))
